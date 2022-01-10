@@ -1,6 +1,7 @@
 import Navigo from "navigo";
 import Footer from "./view/footer/footer";
 import Header from "./view/header/a_header";
+import chap2page from "./view/main/chap2/chap";
 import Homepage from "./view/main/home/home";
 
 
@@ -17,8 +18,8 @@ router.on({
     "/": () => {
         render(Homepage);
     },
-    "/about": () => {
-        render();
+    "/chap2": () => {
+        render(chap2page);
     },
 });
 router.resolve();
