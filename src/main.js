@@ -1,7 +1,9 @@
 import Navigo from "navigo";
 import Footer from "./view/footer/footer";
 import Header from "./view/header/a_header";
-import chap2page from "./view/main/chap2/chap";
+import chap2page from "./view/main/chap2/layout_Chap2";
+import Chap3 from "./view/main/chap3/items_chap3";
+import Post_page from "./view/main/detailpost/Post_page";
 import Homepage from "./view/main/home/home";
 
 
@@ -21,6 +23,14 @@ router.on({
     "/chap2": () => {
         render(chap2page);
     },
+    "/chap3": () => {
+        render(Chap3)
+    },
+    "/chap3/:id": ({ data }) => {
+        const { id } = data;// tạo biến id destructuring từ data 
+        document.getElementById("app").innerHTML = Post_page.print(id);
+
+    }
 });
 router.resolve();
 
