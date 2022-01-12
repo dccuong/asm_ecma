@@ -5,6 +5,7 @@ import chap2page from "./view/main/chap2/layout_Chap2";
 import Chap3 from "./view/main/chap3/items_chap3";
 import Post_page from "./view/main/detailpost/Post_page";
 import Homepage from "./view/main/home/home";
+import Sign_in_up from "./view/main/signinup/sign_in_up";
 
 
 
@@ -30,7 +31,17 @@ router.on({
         const { id } = data;// tạo biến id destructuring từ data 
         document.getElementById("app").innerHTML = Post_page.print(id);
 
-    }
+    },
+    "/admin": () => {
+
+    },
+    "/signin": () => {
+        document.getElementById("app").innerHTML = Sign_in_up.print_in();
+    },
+    "/signup": () => {
+        document.getElementById("app").innerHTML = Sign_in_up.print_up();
+    },
+
 });
 router.resolve();
 
