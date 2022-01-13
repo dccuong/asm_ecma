@@ -12,6 +12,8 @@ const Menu = {
           </li>
           <li><a href="/signup" class="block py-[16px] px-[20px] font-bold hover:bg-stone-500">sign up</a>
           </li>
+          <li><a href="/admin" class="block py-[16px] px-[20px] font-bold hover:bg-stone-500">admin</a>
+          </li>
 
         </ul>
         `

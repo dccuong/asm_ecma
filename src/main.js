@@ -1,4 +1,9 @@
 import Navigo from "navigo";
+import Footer_Ad from "./view/admin/footer/footer";
+import Header_Ad from "./view/admin/header/header_AD";
+import add_News from "./view/admin/main/news/add_news/add_news";
+import New_Detail from "./view/admin/main/news/detail_news/news_Deatil";
+import list_News from "./view/admin/main/news/list_news/list_news";
 import Footer from "./view/footer/footer";
 import Header from "./view/header/a_header";
 import chap2page from "./view/main/chap2/layout_Chap2";
@@ -33,8 +38,32 @@ router.on({
 
     },
     "/admin": () => {
+        document.getElementById("foot").innerHTML = Footer_Ad.print();
+        document.getElementById("header").innerHTML = Header_Ad.print();
 
     },
+    "/admin/news/": () => {
+        document.getElementById("foot").innerHTML = Footer_Ad.print();
+        document.getElementById("header").innerHTML = Header_Ad.print();
+        render(list_News);
+
+    },
+    "/admin/news/add_news": () => {
+        document.getElementById("foot").innerHTML = Footer_Ad.print();
+        document.getElementById("header").innerHTML = Header_Ad.print();
+        render(add_News)
+
+    },
+    "/admin/news/:id": ({ data }) => {
+        document.getElementById("foot").innerHTML = Footer_Ad.print();
+        document.getElementById("header").innerHTML = Header_Ad.print();
+        const { id } = data;// tạo biến id destructuring từ data 
+        document.getElementById("app").innerHTML = New_Detail.print(id);
+
+    },
+
+
+
     "/signin": () => {
         document.getElementById("app").innerHTML = Sign_in_up.print_in();
     },
