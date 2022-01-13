@@ -4,6 +4,7 @@ import Header_Ad from "./view/admin/header/header_AD";
 import add_News from "./view/admin/main/news/add_news/add_news";
 import edit_Detail from "./view/admin/main/news/edit_news/edit_News";
 import list_News from "./view/admin/main/news/list_news/list_news";
+
 import Footer from "./view/footer/footer";
 import Header from "./view/header/a_header";
 import chap2page from "./view/main/chap2/layout_Chap2";
