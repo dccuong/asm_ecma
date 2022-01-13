@@ -2,7 +2,6 @@ import Navigo from "navigo";
 import Footer_Ad from "./view/admin/footer/footer";
 import Header_Ad from "./view/admin/header/header_AD";
 import add_News from "./view/admin/main/news/add_news/add_news";
-import New_Detail from "./view/admin/main/news/detail_news/news_Deatil";
 import edit_Detail from "./view/admin/main/news/edit_news/edit_News";
 import list_News from "./view/admin/main/news/list_news/list_news";
 import Footer from "./view/footer/footer";
@@ -23,6 +22,10 @@ const router = new Navigo("/", { linksSelector: "a" });
 const render = (content) => {
     document.getElementById("app").innerHTML = content.print();
 };
+const layout_ad = () => {
+    document.getElementById("foot").innerHTML = Footer_Ad.print();
+    document.getElementById("header").innerHTML = Header_Ad.print();
+};
 router.on({
     "/": () => {
         render(Homepage);
@@ -39,25 +42,22 @@ router.on({
 
     },
     "/admin": () => {
-        document.getElementById("foot").innerHTML = Footer_Ad.print();
-        document.getElementById("header").innerHTML = Header_Ad.print();
+        layout_ad();
+
 
     },
     "/admin/news/": () => {
-        document.getElementById("foot").innerHTML = Footer_Ad.print();
-        document.getElementById("header").innerHTML = Header_Ad.print();
+        layout_ad();
         render(list_News);
 
     },
     "/admin/news/add": () => {
-        document.getElementById("foot").innerHTML = Footer_Ad.print();
-        document.getElementById("header").innerHTML = Header_Ad.print();
+        layout_ad();
         render(add_News);
 
     },
     "/admin/news/:id/edit": ({ data }) => {
-        document.getElementById("foot").innerHTML = Footer_Ad.print();
-        document.getElementById("header").innerHTML = Header_Ad.print();
+        layout_ad();
         const { id } = data;// tạo biến id destructuring từ data 
         document.getElementById("app").innerHTML = edit_Detail.print(id);
 
