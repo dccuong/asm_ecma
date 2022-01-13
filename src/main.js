@@ -3,6 +3,7 @@ import Footer_Ad from "./view/admin/footer/footer";
 import Header_Ad from "./view/admin/header/header_AD";
 import add_News from "./view/admin/main/news/add_news/add_news";
 import New_Detail from "./view/admin/main/news/detail_news/news_Deatil";
+import edit_Detail from "./view/admin/main/news/edit_news/edit_News";
 import list_News from "./view/admin/main/news/list_news/list_news";
 import Footer from "./view/footer/footer";
 import Header from "./view/header/a_header";
@@ -48,17 +49,17 @@ router.on({
         render(list_News);
 
     },
-    "/admin/news/add_news": () => {
+    "/admin/news/add": () => {
         document.getElementById("foot").innerHTML = Footer_Ad.print();
         document.getElementById("header").innerHTML = Header_Ad.print();
-        render(add_News)
+        render(add_News);
 
     },
-    "/admin/news/:id": ({ data }) => {
+    "/admin/news/:id/edit": ({ data }) => {
         document.getElementById("foot").innerHTML = Footer_Ad.print();
         document.getElementById("header").innerHTML = Header_Ad.print();
         const { id } = data;// tạo biến id destructuring từ data 
-        document.getElementById("app").innerHTML = New_Detail.print(id);
+        document.getElementById("app").innerHTML = edit_Detail.print(id);
 
     },
 

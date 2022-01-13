@@ -1,6 +1,6 @@
 const Header_Ad = {
-    print() {
-        return /*html*/`
+  print() {
+    return /*html*/`
        
         <div class="bg-gray-500 h-[80px]" >
         <ul class="flex pt-[25px] justify-around">
@@ -8,7 +8,7 @@ const Header_Ad = {
           <a class="text-white hover:text-blue-800" href="#">DashBoard</a>
         </li>
         <li class="mr-6">
-          <a class="text-white hover:text-blue-800" href="admin/news">News</a>
+          <a class="text-white hover:text-blue-800" href="/admin/news">News</a>
         </li>
         <li class="mr-6">
           <a class="text-white hover:text-blue-800" href="#">Link</a>
@@ -20,6 +20,6 @@ const Header_Ad = {
        
       </div>
         `
-    }
+  }
 }
 export default Header_Ad
