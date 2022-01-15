@@ -3,7 +3,8 @@ import Footer_Ad from "./view/admin/footer/footer";
 import Header_Ad from "./view/admin/header/header_AD";
 import add_News from "./view/admin/main/news/add_news/add_news";
 import edit_Detail from "./view/admin/main/news/edit_news/edit_News";
-import List_News from "./view/admin/main/news/List_News/List_News";
+import danhSachBaiViet from "./view/admin/main/news/danhSachBaiViet/danhSachBaiViet";
+
 
 
 import Footer from "./view/footer/footer";
@@ -50,7 +51,7 @@ router.on({
     },
     "/admin/news/": () => {
         layout_ad();
-        render(List_News);
+        render(danhSachBaiViet);
 
     },
     "/admin/news/add": () => {

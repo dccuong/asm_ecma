@@ -1,6 +1,6 @@
 import data from "../../../../../data2";
 
-const items_News = {
+const noiDung = {
   print() {
     return /*html*/`
             <div class="pt-[20px]">
@@ -24,4 +24,4 @@ const items_News = {
             `
   }
 }
-export default items_News
+export default noiDung
