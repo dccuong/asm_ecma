@@ -1,7 +1,5 @@
 import items_News from "./items_news"
-
-
-const list_News = {
+const List_News = {
   print() {
     return /*html*/`
         <div class="item_home">
@@ -10,4 +8,4 @@ const list_News = {
         `
   }
 }
-export default list_News
+export default List_News

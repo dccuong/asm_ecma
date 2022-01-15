@@ -3,7 +3,8 @@ import Footer_Ad from "./view/admin/footer/footer";
 import Header_Ad from "./view/admin/header/header_AD";
 import add_News from "./view/admin/main/news/add_news/add_news";
 import edit_Detail from "./view/admin/main/news/edit_news/edit_News";
-import list_News from "./view/admin/main/news/list_news/list_news";
+import List_News from "./view/admin/main/news/List_News/List_News";
+
 
 import Footer from "./view/footer/footer";
 import Header from "./view/header/a_header";
@@ -44,10 +45,12 @@ router.on({
     },
     "/admin": () => {
         layout_ad();
+
+
     },
     "/admin/news/": () => {
         layout_ad();
-        render(list_News);
+        render(List_News);
 
     },
     "/admin/news/add": () => {
