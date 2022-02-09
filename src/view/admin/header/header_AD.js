@@ -5,7 +5,7 @@ const Header_Ad = {
         <div class="bg-gray-500 h-[80px]" >
         <ul class="flex pt-[25px] justify-around">
         <li class="mr-6">
-          <a class="text-white hover:text-blue-800" href="#">DashBoard</a>
+          <a class="text-white hover:text-blue-800" href="/admin">DashBoard</a>
         </li>
         <li class="mr-6">
           <a class="text-white hover:text-blue-800" href="/admin/news">News</a>

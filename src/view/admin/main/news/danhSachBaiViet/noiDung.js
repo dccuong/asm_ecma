@@ -1,7 +1,8 @@
-import data from "../../../../../data2";
+import { getAll } from "../../../../../api/posts";
 
 const noiDung = {
-  print() {
+  async print() {
+    const { data } = await getAll();
     return /*html*/`
             <div class="pt-[20px]">
             
@@ -11,7 +12,7 @@ const noiDung = {
             <div class="border-[1px] border-slate-900 py-2 px-3"> 
             <a href="admin/news/${post.id}/edit" class="hover:text-stone-500" >
              <div>
-                   <img src="${post.img}" alt="" class="mx-auto"><br>
+                   <img src="${post.images}" alt="" class="mx-auto"><br>
                    <p class="text-red-600 font-bold text-[10px]">${post.title} </p>
                    <p class=" text-[10px]">${post.desc}</p>
               </div>

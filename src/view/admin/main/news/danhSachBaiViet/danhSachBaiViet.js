@@ -1,9 +1,9 @@
 import items_News from "./noiDung"
 const danhSachBaiViet = {
-  print() {
+  async print() {
     return /*html*/`
         <div class="item_home">
-        ${items_News.print()}
+        ${await items_News.print()}
       </div>
         `
   }

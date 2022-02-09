@@ -1,16 +1,15 @@
-import data2 from "../../../data2";
-
-
+import { get } from "../../../api/posts"
 
 const Post_page = {
-    print(id) {
-        const result = data2.find((post) => post.id === id);
+    async print(id) {
+        const { data } = await get(id);
+
         return /*html*/`
-        <div  class="mt-[20px] text-center" >
-            <h1 class="font-bold">${result.title}</h1>
-            <img src="${result.img}" class="mx-auto" />
-            <p>${result.desc}</p>
-        `;
+                <div  class="mt-[20px] text-center" >
+                <h1 class="font-bold">${data.title}</h1>
+                <img src="${data.images}" class="mx-auto" />
+                <p>${data.desc}</p>
+        `
     }
 }
 export default Post_page;
