@@ -1,12 +1,5 @@
 {
-  "post": [
-    {
-      "id": 1,
-      "class": 1,
-      "title": "tieu de bai viet 1",
-      "images": "https://picsum.photos/312/249",
-      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit"
-    },
+  "posts": [
     {
       "id": 2,
       "class": 1,
@@ -15,50 +8,24 @@
       "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit"
     },
     {
-      "id": 3,
-      "class": 1,
-      "title": "tieu de bai viet 3",
-      "images": "https://picsum.photos/312/249",
-      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit"
+      "title": "tieu de bai viet 21",
+      "images": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644753688/okxqy0s3vkcioqw0asnf.png",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deserunt sunt assumenda, amet aut, quidem officia molestias eius nihil perferendis autem quibusdam illum sint possimus iste! Itaque molestiae ad placeat?",
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "email": "cuongndph18057@fpt.edu.vn",
+      "password": "$2a$10$81/2hj3.FZ20BW7iuzvKvuUeHtwDKZ.wOdw9qqMrjY4S3J79x.IbS",
+      "username": "nguoidung",
+      "id": 1
     },
     {
-      "id": 4,
-      "class": 2,
-      "title": "tieu de bai viet 4",
-      "images": "https://picsum.photos/312/249",
-      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit"
-    },
-    {
-      "id": 5,
-      "class": 2,
-      "title": "tieu de bai viet 5",
-      "images": "https://picsum.photos/312/249",
-      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit"
-    },
-    {
-      "id": 6,
-      "class": 2,
-      "title": "tieu de bai viet 6",
-      "images": "https://picsum.photos/312/249",
-      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit"
-    },
-    {
-      "title": "",
-      "images": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644371910/cpwzlyybnlgqyomfxi3m.png",
-      "desc": "",
-      "id": 7
-    },
-    {
-      "title": "aaaaa",
-      "images": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644371920/wcaxabqexfh5qwwwbu7s.png",
-      "desc": "aaaaaaaaaaaaaaaa",
-      "id": 8
-    },
-    {
-      "title": "aaaaa",
-      "images": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644371936/r9bvlragsdyzczm3amkv.png",
-      "desc": "aaaaaaaaaaaaaaaa",
-      "id": 9
+      "email": "cuongndph18057@fpt.edu.vbn",
+      "password": "$2a$10$7QvZdiYyQ7E9VgRLwmcup.QFrBKiWWwWknZPGOYdm2rm8ZfMU91c.",
+      "username": "nguyễn đức cường",
+      "id": 2
     }
   ]
 }

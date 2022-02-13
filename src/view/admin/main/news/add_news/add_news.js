@@ -63,7 +63,7 @@ const add_News = {
         "images": response.data.url,
         "desc": document.querySelector('#desc').value
       });
-      // document.location.href = "/#/admin/news";
+      document.location.href = "/admin/news";
       // await reRender(AdminPost, "#app");
     })
   },

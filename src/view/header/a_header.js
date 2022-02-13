@@ -5,14 +5,17 @@ import Menu from "./menu"
 const Header = {
   print() {
     return /*html*/`
-        <div class="bg-blue-900 py-[16px]">
+        <div class="flex items-center bg-orange-200">
       ${Logo.print()}
       </div>
-      <div class="bg-orange-600 flex text-white">
+      <div class="bg-slate-800 flex text-white">
         ${Menu.print()}
         ${Form.print()}
       </div>
     `
+  },
+  afterRender() {
+    Logo.afterRender()
   }
 }
 export default Header
