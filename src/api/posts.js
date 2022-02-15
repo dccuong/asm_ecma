@@ -1,6 +1,6 @@
 import instance from "./instance";
 export const getAll = () => {
-    const url = "/posts";
+    const url = "/posts?_order=desc";
     return instance.get(url);
 }
 
@@ -19,4 +19,7 @@ export const remove = (id) => {
 export const update = (post) => {
     const url = `/posts/` + post.id;
     return instance.put(url, post);
+}
+export const search = (post) => {
+    const url = '/posts/'
 }

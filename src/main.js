@@ -65,6 +65,10 @@ router.on({
         render(noiDung);
 
     },
+    "/admin/acc/": () => {
+        layout_ad();
+        render();
+    },
     "admin/news/add": () => {
         layout_ad();
         render(add_News);

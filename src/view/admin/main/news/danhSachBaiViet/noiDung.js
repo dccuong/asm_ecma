@@ -14,9 +14,9 @@ const noiDung = {
             <div class="border-[1px] border-slate-900 py-2 px-3"> 
             <a href="/admin/news/${post.id}/edit" class="hover:text-stone-500" >
              <div>
-                   <img src="${post.images}" alt="" class="mx-auto"><br>
+                   <img src="${post.images1}" alt="" class="mx-auto"><br>
                    <p class="text-red-600 font-bold text-[10px]">${post.title} </p>
-                   <p class=" text-[10px]">${post.desc}</p>
+                   <p class=" text-[10px]">${post.price}</p>
               </div>
              </a>
              <button class="btn bg-red-500 m-[10px] p-[5px] text-[10px] " data-id=${post.id}>delete</button>

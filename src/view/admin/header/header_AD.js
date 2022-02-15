@@ -12,7 +12,7 @@ const Header_Ad = {
           <a class="text-white hover:text-blue-800" href="/admin/news">News</a>
         </li>
         <li class="mr-6">
-          <a class="text-white hover:text-blue-800" href="#">Link</a>
+          <a class="text-white hover:text-blue-800" href="/acc">Acc</a>
         </li>
         <li class="mr-6">
           <a class="text-white hover:text-blue-800" href="">back to home</a>

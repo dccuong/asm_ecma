@@ -1,17 +1,40 @@
 {
   "posts": [
     {
-      "id": 2,
-      "class": 1,
-      "title": "tieu de bai viet 2",
-      "images": "https://picsum.photos/312/249",
-      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit"
+      "title": "Tai nghe nhét tai Devia Cổng Lightning",
+      "images1": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644926494/vwnxaybwp4ubnzfcgqc1.png",
+      "images2": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644926494/vwnxaybwp4ubnzfcgqc1.png",
+      "desc": "Tai nghe Devia Smart Series Stereo Wired (Lightning) thiết kế nhỏ gọn bền bỉ Chiếc tai nghe có dây của bạn đang dùng đã quá cũ và trải nghiệm âm không còn tốt? Hãy thay thế ngay tai nghe Devia Smart Series Stereo Wired (Lightning) công nghệ mới. Đó là điều cần thiết để bạn thưởng thức âm nhạc đồng thời bảo vệ đôi tai của mình.  Thiết kế công thái học vừa vặn, dây dài 1.2m Tai nghe Devia Smart Series Stereo Wired sở hữu thiết kế công thái học với ốc tai kích thước vừa phải, bọc lớp cao su tránh đau tai. Kích thước nhỏ gọn và cân nặng cực nhỏ không gây nặng nề cả khi bạn đeo tai nghe hàng giờ.  Sợi dây tai nghe 1.2m được bao bọc bởi lớp vỏ bền bỉ bảo vệ lõi bên trong hỗ trợ âm thanh được truyền tải ổn định. Nút bấm vật lý tăng giảm volume tích hợp trên dây, tiện lợi thay đổi độ lớn âm thanh khi cần thiết.",
+      "price": "250.000",
+      "categoryId": 1,
+      "id": 16
     },
     {
-      "title": "tieu de bai viet 21",
-      "images": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644753688/okxqy0s3vkcioqw0asnf.png",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deserunt sunt assumenda, amet aut, quidem officia molestias eius nihil perferendis autem quibusdam illum sint possimus iste! Itaque molestiae ad placeat?",
-      "id": 12
+      "title": "Tai nghe JBL C150SI",
+      "images1": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644926604/d2d97xcyannh2gxgzbwc.png",
+      "images2": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644926604/d2d97xcyannh2gxgzbwc.png",
+      "desc": "JBL C150SI – Tai nghe giá rẻ cho người dùng phổ thông Bên cạnh việc làm ra những tai nghe tầm cao cấp thì những chiếc tai nghe giá rẻ đến từ nhà JBL như chiếc tai nghe JBL C150SI cũng được hãng cực kì chăm chút về mặt thiết kế cũng như chất âm bên trong của nó.  JBL thuộc hãng loa top đầu thế giới với chất âm trầm đặc trưng JBL là một công ty được thành lập tại Mỹ vào năm 1946 bởi người kỹ sư âm thanh tài ba James Bullough Lansing. Vào những ngày đầu công ty đã gặp khó khăn nhưng sau khi trở về với công ty Harman Kardon cùng với sự cố gắng cải thiện mình trong từng sản phẩm, JBL đã dần chiếm được lòng tin của người tiêu dùng và vươn lên top đầu những hãng sản xuất âm thanh.",
+      "price": "250.000",
+      "categoryId": 1,
+      "id": 17
+    },
+    {
+      "title": "Tai nghe KZ EDX Pro",
+      "images1": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644931855/kkez31i0jnhzvs2hyfpu.png",
+      "images2": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644931856/dqr9er8hpc47slcmzpwn.png",
+      "desc": "Tai nghe KZ EDX Pro - Âm thanh khác biệt Thật khó tìm trên thị trường có những chiếc tai nghe có dây hỗ trợ cho trải nghiệm âm thanh chuẩn xác. Nhưng đâu đó, chúng ta vẫn tìm ra được một sản phẩm, mang tên tai nghe KZ EDX Pro, tích hợp những công nghệ bậc nhất trên thị trường.  Thiết kế housing trong suốt, trọng lượng nhẹ dễ đeo Về tổng quan, tai nghe KZ EDX Pro sở hữu vẻ ngoài mang tính thẩm mỹ cao. Bởi phủ một lớp nhựa trong suốt, cho phép thể hiện rõ những cấu tạo ở bên trong tai nghe. ",
+      "price": "300000",
+      "categoryId": 1,
+      "id": 18
+    },
+    {
+      "title": "Tai nghe Bluetooth Xiaomi Earbud Basic S",
+      "images1": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644933457/xllsnj9qwfcsyrs2y7uh.png",
+      "images2": "http://res.cloudinary.com/dcjtdlsw7/image/upload/v1644933458/g1jqqsegeiqnqcdbm3ze.png",
+      "desc": "Tai nghe không dây Xiaomi Mi True Wireless Earbuds Basic S - Âm thanh sống động, kết nối vững chắc Sự thành công của các mẫu tai nghe bluetooth trước đó đã làm cho hãng Xiaomi tiếp tục ra mắt sản phẩm mới mang tên tai nghe Xiaomi Earbuds Basic S. Mang hình dáng công thái học gọn nhẹ, sử dụng driver 7.2mm cho chất âm tuyệt hảo cùng công nghệ Bluetooth 5.0, cặp tai nghe Mi True Wireless Basic S sẽ là món phụ kiện đáng sở hữu trong tầm giá.  Thiết kế công thái học với kích cỡ gọn nhẹ, thoải mái đeo ngày dài Tai nghe không dây Xiaomi Earbuds Basic S có thiết kế công thái học với màu đen cuốn hút, tạo nên nét tinh tế trên tai bạn. Kích cỡ nhỏ nhắn với trọng lượng siêu nhẹ chỉ 4.1g mỗi bên củ tai sẽ đảm bảo bạn tận hưởng được âm nhạc một cách thoải mái trong mọi hoạt động ngoài trời.",
+      "price": "500000",
+      "categoryId": 2,
+      "id": 19
     }
   ],
   "users": [
@@ -26,6 +49,16 @@
       "password": "$2a$10$7QvZdiYyQ7E9VgRLwmcup.QFrBKiWWwWknZPGOYdm2rm8ZfMU91c.",
       "username": "nguyễn đức cường",
       "id": 2
+    }
+  ],
+  "class": [
+    {
+      "clas": 1,
+      "name": "news"
+    },
+    {
+      "clas": 2,
+      "name": "anime"
     }
   ]
 }
