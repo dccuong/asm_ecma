@@ -3,7 +3,6 @@ export const getAll = () => {
     const url = "/posts?_order=desc";
     return instance.get(url);
 }
-
 export const get = (id) => {
     const url = "/posts/" + id;
     return instance.get(url);
@@ -22,4 +21,8 @@ export const update = (post) => {
 }
 export const search = (post) => {
     const url = '/posts/'
+}
+export const getCate = (id) => {
+    const url = "/categorys/" + id + "?_embed=posts";
+    return instance.get(url);
 }

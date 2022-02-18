@@ -1,9 +1,11 @@
+import { reRender } from "../../../utils";
+
 const Logo = {
   print() {
     return/*html*/`
  
-    <div class="px-[5px] font-mono font-bold text-[20px]">DCPAGE</div>
-        <div class="my-[10px]">
+        <div class=" font-mono font-bold text-[20px] items-center">DCPAGE</div>
+        <div class="my-[5px]" >
         <a href="/signin" id="sign_in" class=" text-[12px] font-bold hover:text-stone-100 mx-[10px]">sign in</a>
         <a href="/signup" id="sign_up" class="  text-[12px] font-bold hover:text-stone-100">sign up</a>  
         <span id="user" class=" text-[12px] font-bold hover:text-stone-100 mx-[10px]"></span>
@@ -27,7 +29,7 @@ const Logo = {
 
       logout.addEventListener('click', function () {
         localStorage.removeItem('user');
-        document.location.href = "/"
+        reRender(he, "#sign")
       })
     }
   }

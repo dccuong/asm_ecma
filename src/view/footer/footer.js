@@ -3,7 +3,7 @@
 const Footer = {
     print() {
         return /*html*/`
-        <div class="my-2 h-[50px] font-bold bg-orange-200 text-white text-center py-3">
+        <div class="  fixed bottom-0 w-[100%] font-bold bg-orange-200 text-white text-center py-1">
         CUONGNDPH18057
         </div>`
     }

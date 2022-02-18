@@ -1,16 +1,16 @@
-// import data from "../../../data2";
 
-import { getAll } from "../../../api/posts"
+import { getCate } from "../../../api/posts"
 
 
 const items_Chap3 = {
-  async print() {
-    const { data } = await getAll();
+  async print(categoryId) {
+    const prd_cate = await getCate(categoryId);
 
     return /*html*/` 
             <div>
-             <div class="grid grid-cols-2 gap-4"> 
-             ${data.map((post) => /*html*/`
+            <p class="font-mono text-red-400 text-[20px]">Tai Nghe ${prd_cate.data.name}</p>
+             <div class="grid grid-cols-4 gap-2"> 
+             ${prd_cate.data.posts.map((post) => /*html*/`
             <div class="border-[1px] border-slate-900 py-2 px-3 hover:border-red-500"> 
             <a href="/chap3/${post.id}" class="hover:text-stone-500" >
              <div>
