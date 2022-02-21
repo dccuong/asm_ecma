@@ -2,7 +2,7 @@ const Banner = {
   print() {
     return /*html*/`
  
-  <img class="w-[1024px]" src="https://picsum.photos/960/240" alt="" >
+  <img class="w-[100%] mt-[90px]" src="https://picsum.photos/1357/600" alt="" >
     `
   }
 }

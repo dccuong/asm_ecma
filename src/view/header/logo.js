@@ -3,15 +3,16 @@ import { reRender } from "../../../utils";
 const Logo = {
   print() {
     return/*html*/`
- 
-        <div class=" font-mono font-bold text-[20px] items-center">DCPAGE</div>
-        <div class="my-[5px]" >
+    <div class="flex items-center bg-orange-200 justify-between" id="he">
+      <div class=" font-mono font-bold text-[20px] items-center">DCPAGE</div>
+      <div class="my-[5px]" >
         <a href="/signin" id="sign_in" class=" text-[12px] font-bold hover:text-stone-100 mx-[10px]">sign in</a>
         <a href="/signup" id="sign_up" class="  text-[12px] font-bold hover:text-stone-100">sign up</a>  
         <span id="user" class=" text-[12px] font-bold hover:text-stone-100 mx-[10px]"></span>
         <a href="/admin/news"><span id="admin" class=" text-[12px] font-bold hover:text-stone-100"></span></a>        
         <button id="logout" class=" text-[12px] font-bold hover:text-stone-100"></button>
-        </div>
+      </div>
+    </div>
         `
   }, afterRender() {
     const sign_in = document.querySelector('#sign_in');
@@ -29,7 +30,7 @@ const Logo = {
 
       logout.addEventListener('click', function () {
         localStorage.removeItem('user');
-        reRender(he, "#sign")
+        reRender(Logo, "#he")
       })
     }
   }

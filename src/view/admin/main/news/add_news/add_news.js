@@ -37,12 +37,14 @@ const add_News = {
     
     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
+   
     Up File1
     </label>
     <input id="images1" class=" block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"  type="file">
   </div>
   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
+ 
   Up File2
   </label>
   <input id="images2" class=" block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"  type="file">
@@ -58,6 +60,9 @@ const add_News = {
     const formAdd = document.querySelector('#add_news');
     const imgPost1 = document.querySelector('#images1');
     const imgPost2 = document.querySelector('#images2');
+    const imgPreview1 = document.querySelector('#previewImage');
+    const imgPreview2 = document.querySelector('#previewImage');
+    let imgUploadedLink = "";
 
     const CLOUDINARY_API = "https://api.cloudinary.com/v1_1/dcjtdlsw7/image/upload"
     const CLOUDINARY_PRESET = "uiqccvxh";

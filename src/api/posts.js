@@ -1,6 +1,18 @@
 import instance from "./instance";
 export const getAll = () => {
-    const url = "/posts?_order=desc";
+    const url = "/posts";
+    return instance.get(url);
+}
+export const getLimit = () => {
+    const url = "/posts?_limit=8";
+    return instance.get(url);
+}
+export const getDesc = () => {
+    const url = "posts?_sort=price&_order=desc";
+    return instance.get(url);
+}
+export const getAsc = () => {
+    const url = "posts?_sort=price&_order=asc";
     return instance.get(url);
 }
 export const get = (id) => {
@@ -24,5 +36,9 @@ export const search = (post) => {
 }
 export const getCate = (id) => {
     const url = "/categorys/" + id + "?_embed=posts";
+    return instance.get(url);
+}
+export const getSearch = (value) => {
+    const url = "/posts?p=" + value;
     return instance.get(url);
 }

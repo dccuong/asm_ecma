@@ -25,14 +25,14 @@ const prd_Detail = {
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
           Up File1
           </label>
-          <img  src="${data.images1}" id="img">
+          <img  src="${data.images1}"id="previewImage1">
           <input id="images1" value="${data.images2}" class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"  type="file" }>
         </div>
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
         Up File2
         </label>
-        <img  src="${data.images2}" id="img">
+        <img  src="${data.images2}" id="previewImage2">
         <input id="images2" value="${data.images2}" class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"  type="file" }>
       </div>
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -70,6 +70,16 @@ const prd_Detail = {
     const formEdit = document.querySelector('#formEdit');
     const imgPost1 = document.querySelector('#images1');
     const imgPost2 = document.querySelector('#images2');
+    const imgPreview1 = document.querySelector('#previewImage1');
+    const imgPreview2 = document.querySelector('#previewImage2');
+    let imgUploadedLink1 = "";
+    let imgUploadedLink2 = "";
+    imgPost1.addEventListener("change", (e) => {
+      imgPreview1.src = URL.createObjectURL(imgPost1.files[0])
+    });
+    imgPost2.addEventListener("change", (e) => {
+      imgPreview2.src = URL.createObjectURL(imgPost2.files[0])
+    });
 
 
     const CLOUDINARY_API = "https://api.cloudinary.com/v1_1/dcjtdlsw7/image/upload"

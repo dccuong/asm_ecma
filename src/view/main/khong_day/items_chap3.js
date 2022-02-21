@@ -22,6 +22,7 @@ const items_Chap3 = {
                </div>
              `).join("")}
              </div>
+             </div>
             `
   }
 }

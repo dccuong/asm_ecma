@@ -57,7 +57,7 @@ const Sign_in = {
         });
         localStorage.setItem('user', JSON.stringify(data.user))
         if (data.user.id == 1) {
-          document.location.href = "#"
+          document.location.href = ""
         } else {
           document.location.href = "#"
         }

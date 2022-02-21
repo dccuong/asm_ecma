@@ -1,5 +1,6 @@
 import Navigo from "navigo";
-import Footer_Ad from "./view/admin/footer/footer";
+
+// import footer_Ad from "./view/admin/header/footer_AD";
 import Header_Ad from "./view/admin/header/header_AD";
 import add_News from "./view/admin/main/news/add_news/add_news";
 import Footer from "./view/footer/footer";
@@ -15,15 +16,18 @@ import Prd_page from "./view/main/detailprd/pr_page";
 import prd_Detail from "./view/admin/main/news/detail_prd/Prd_Deatil";
 import by_Prd from "./view/main/detailprd/by_Prd";
 import { data } from "autoprefixer";
+import Form from "./view/header/form";
 
 const layout_client = () => {
     document.getElementById("foot").innerHTML = Footer.print();
     document.getElementById("header").innerHTML = Header.print();
     Header.afterRender();
+    Form.afterRender()
+
 }
 const layout_ad = () => {
-    document.getElementById("foot").innerHTML = Footer_Ad.print();
     document.getElementById("header").innerHTML = Header_Ad.print();
+    // document.getElementById("foot").innerHTML = footer_Ad.print();
 };
 //router
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -67,6 +71,11 @@ router.on({
         render(Prd_page, id);
         layout_client();
     },
+    // "/search/posts?p=:value": () => {
+    //     const value =  ;// tạo biến id destructuring từ data 
+    //     render(Prd_page, id);
+    //     layout_client();
+    // },
     "/signin": () => { render(Sign_in); layout_client(); },
     "/signup": () => { render(Sign_up); layout_client(); },
     "/buy": () => { render(by_Prd); layout_client(); },
@@ -84,7 +93,7 @@ router.on({
         layout_ad();
         render();
     },
-    "admin/news/add": () => {
+    "admin/prd/add": () => {
         layout_ad();
         render(add_News);
 
