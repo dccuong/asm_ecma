@@ -3,10 +3,8 @@ import items_home from "./item_home";
 const Homepage = {
   async print() {
     return (/*html*/`
-    <div class="w-[1024px] my-2 mx-auto ">
-       ${Banner.print()}
-      </div>
-      <div class="item_home">
+    ${Banner.print()}
+      <div class="item_home w-[1024px] mx-auto">
         ${await items_home.print()}
       </div>`)
   }
