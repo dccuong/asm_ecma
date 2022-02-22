@@ -28,7 +28,7 @@ const by_Prd = {
                     số lượng
                     </th>
                     <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                    thành tiền
+                    
                     </th>
                
                     <th scope="col"class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
@@ -66,7 +66,8 @@ const by_Prd = {
            
                 <th scope="col"class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400" >
                 </th>
-                <th scope="col"class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                <th scope="col"class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400"> <button class=" text-white btn btn-remove mr-2 px-2">Thanh Toán</button>
+                </td>
                 </th>
             </tr>
         </thead>
@@ -75,7 +76,7 @@ const by_Prd = {
                 </div>
             </div>
         </div>
-        <div class="" id="sum"></div>
+     
         `
     },
     afterRender() {
@@ -104,7 +105,7 @@ const by_Prd = {
                 sum_elm += (prd.price) * prd.quantity;
             })
             console.log(sum_elm);
-            tong_gia.innerHTML = sum_elm
+            tong_gia.innerHTML = sum_elm + ",000 VNĐ"
 
 
 

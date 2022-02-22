@@ -47,7 +47,7 @@ const prd_Detail = {
       </label>
       
     <select id="category" class="block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-    <option value="${data.categoryId}">${data.categoryId.name}</option>
+    <option value="${data.categoryId}"></option>
     <option value="1">Có dây</option>
       <option value="2">Không dây</option>
       </select>

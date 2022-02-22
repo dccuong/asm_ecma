@@ -1,4 +1,4 @@
-import { getSearch } from "../../api/posts";
+import { Search } from "../../api/posts";
 
 const Form = {
   print() {
@@ -25,11 +25,17 @@ const Form = {
 
     const go_search = document.querySelector("#go_search");
 
-    go_search.addEventListener("submit", (e) => {
+    go_search.addEventListener("submit", async (e) => {
       e.preventDefault();
       const valueSearch = document.querySelector("#tk").value;
       console.log(valueSearch)
-      document.location.href("/search/post=?${valueSearch}")
+      const { data } = await Search(valueSearch)
+      console.log(data)
+      localStorage.setItem("search", JSON.stringify(data))
+      setTimeout(() => {
+        document.location.href = "/search";
+      }, 200);
+
     })
 
   }

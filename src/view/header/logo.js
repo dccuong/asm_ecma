@@ -9,7 +9,7 @@ const Logo = {
         <a href="/signin" id="sign_in" class=" text-[12px] font-bold hover:text-stone-100 mx-[10px]">sign in</a>
         <a href="/signup" id="sign_up" class="  text-[12px] font-bold hover:text-stone-100">sign up</a>  
         <span id="user" class=" text-[12px] font-bold hover:text-stone-100 mx-[10px]"></span>
-        <a href="/admin/news"><span id="admin" class=" text-[12px] font-bold hover:text-stone-100"></span></a>        
+        <a href="/admin/prds"><span id="admin" class=" text-[12px] font-bold hover:text-stone-100"></span></a>        
         <button id="logout" class=" text-[12px] font-bold hover:text-stone-100"></button>
       </div>
     </div>

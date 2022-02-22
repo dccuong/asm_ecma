@@ -9,7 +9,7 @@ export const signup = (user) => {
     const url = `/signup`;
     return instance.post(url, user);
 }
-export const getAll = () => {
+export const getAllUser = () => {
     const url = `/users`;
     return instance.get(url);
 }

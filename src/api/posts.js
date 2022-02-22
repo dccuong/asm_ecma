@@ -31,14 +31,11 @@ export const update = (post) => {
     const url = `/posts/` + post.id;
     return instance.put(url, post);
 }
-export const search = (post) => {
-    const url = '/posts/'
-}
 export const getCate = (id) => {
     const url = "/categorys/" + id + "?_embed=posts";
     return instance.get(url);
 }
-export const getSearch = (value) => {
-    const url = "/posts?p=" + value;
+export const Search = (value) => {
+    const url = "/posts?title_like=" + value;
     return instance.get(url);
 }

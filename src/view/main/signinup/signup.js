@@ -1,5 +1,5 @@
 
-import { getAll, signup } from "../../../api/user";
+import { getAllUser, signup } from "../../../api/user";
 const Sign_up = {
   async print() {
     return /*html*/`<form id="signup" onchange="" class="mt-8 space-y-6" action="#" method="POST">

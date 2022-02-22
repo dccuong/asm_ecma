@@ -1,9 +1,13 @@
 import { signin } from "../../../api/user";
 import toastr from "toastr";
-
+import "toastr/build/toastr.min.css";
+import jquery from "jquery";
+import jqueryValidate from "jquery-validation";
 const Sign_in = {
   async print() {
     return /*html*/`
+    <div class="w-[500px] mx-auto mt-[200px]">
+    <h1>Sign In</h1>
          <form id="signin" class="mt-8 space-y-6" action="#" method="POST">
          <input type="hidden" name="remember" value="true">
          <div class="rounded-md shadow-sm -space-y-px">
@@ -43,7 +47,8 @@ const Sign_in = {
          Sign in
        </button>
          </div>
-       </form>`
+       </form>
+       </div>`
   },
   afterRender() {
     const formSignin = document.querySelector("#signin");
@@ -54,9 +59,10 @@ const Sign_in = {
         const { data } = await signin({
           email: document.querySelector("#email").value,
           password: document.querySelector("#pass").value,
-        });
+        })
+        console.log(data);
         localStorage.setItem('user', JSON.stringify(data.user))
-        if (data.user.id == 1) {
+        if (data.user.id <= 10) {
           document.location.href = ""
         } else {
           document.location.href = "#"

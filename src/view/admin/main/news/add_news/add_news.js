@@ -105,7 +105,7 @@ const add_News = {
         price: document.querySelector('#price').value,
         categoryId: document.querySelector('#category').value,
       });
-      document.location.href = "/admin/news";
+      document.location.href = "/admin/prds";
       // await reRender(AdminPost, "#app");
     })
   },

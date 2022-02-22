@@ -4,25 +4,61 @@ import { reRender } from "../../../../../../utils";
 const noiDung = {
   async print() {
     const { data } = await getAll();
+    console.log(data)
     return /*html*/`
     <div class="item_home" id="item_admin">
-            <div class="pt-[20px]">
+    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
+        <div class="overflow-hidden shadow-md ">
+    <table class="min-w-full">
+        <thead class="bg-gray-50 dark:bg-gray-700">
+            <tr>
+            <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+            <a href="/admin/prds/add"> <button class="bg-blue-500 text-white mr-3 px-2">Thêm Mới</button></a>
+            </th>
+                <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                titler
+                </th>
+                <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                Price
+                </th>
+                <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+               Image
+                </th>
+                <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                categoryId
+                </th>
+           
+                <th scope="col"class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                 xóa
+                </th>
+            </tr>
+        </thead>
+        <tbody class="">
+            ${data.map(prd => /*html*/`
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"></td>
             
-             <div class="grid grid-cols-5 gap-2"> 
-             <a href="#/admin/prd/add"><button type="button" class="w-[186px] h-[252px] bg-gray-500">+ <br> add news</button></a>
-             ${data.map((post) => /*html*/`
-            <div class="border-[1px] border-slate-900 py-2 px-3"> 
-            <a href="#/admin/news/${post.id}/edit" class="hover:text-stone-500" >
-             <div>
-                   <img src="${post.images1}" alt="" class="mx-auto"><br>
-                   <p class="text-red-600 font-bold text-[10px]">${post.title} </p>
-                   <p class=" text-[10px]">${post.price}</p>
-              </div>
-             </a>
-             <button class="btn bg-red-500 m-[10px] p-[5px] text-[10px] " data-id=${post.id}>delete</button>
-               </div>
-             `).join("")}
-          </div>
+
+
+               <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">${prd.title}</td>
+                <td class=" py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"  id="gia_sp">${prd.price}.000</td>
+                <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"> <img  src="${prd.images1}" width="50px">
+                   
+                  
+                </td>
+                <td class=" py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">${prd.categoryId}</td>
+                <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <button data-id="${prd.id}" class="bg-red-500 text-white btn btn-remove mr-2 px-2">Xóa</button>
+                    <a href="/admin/prds/${prd.id}/edit"> <button class="bg-blue-500 text-white mr-2 px-2">Sủa</button></a>
+                </td>
+            </tr>`).join("")}
+        </tbody>
+       
+    </table>
+                </div>
+            </div>
+        </div>
              </div>
             `
   },
@@ -36,7 +72,7 @@ const noiDung = {
         const confirm = window.confirm("delete?");
         if (confirm) {
           remove(id).then(() =>
-            document.location.href = "/admin/news")
+            document.location.href = "/admin/prds")
         }
       })
     })

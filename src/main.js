@@ -1,6 +1,5 @@
 import Navigo from "navigo";
 
-// import footer_Ad from "./view/admin/header/footer_AD";
 import Header_Ad from "./view/admin/header/header_AD";
 import add_News from "./view/admin/main/news/add_news/add_news";
 import Footer from "./view/footer/footer";
@@ -15,8 +14,10 @@ import noiDung from "./view/admin/main/news/danhSach_prd/noiDung";
 import Prd_page from "./view/main/detailprd/pr_page";
 import prd_Detail from "./view/admin/main/news/detail_prd/Prd_Deatil";
 import by_Prd from "./view/main/detailprd/by_Prd";
-import { data } from "autoprefixer";
 import Form from "./view/header/form";
+import userAcc from "./view/admin/main/user/user";
+import sPage from "./view/main/khong_day/search";
+
 
 const layout_client = () => {
     document.getElementById("foot").innerHTML = Footer.print();
@@ -71,11 +72,10 @@ router.on({
         render(Prd_page, id);
         layout_client();
     },
-    // "/search/posts?p=:value": () => {
-    //     const value =  ;// tạo biến id destructuring từ data 
-    //     render(Prd_page, id);
-    //     layout_client();
-    // },
+    "/search": () => {
+        render(sPage);
+        layout_client();
+    },
     "/signin": () => { render(Sign_in); layout_client(); },
     "/signup": () => { render(Sign_up); layout_client(); },
     "/buy": () => { render(by_Prd); layout_client(); },
@@ -84,21 +84,21 @@ router.on({
         layout_ad();
         render(dashb)
     },
-    "/admin/news/": () => {
+    "/admin/prds/": () => {
         layout_ad();
         render(noiDung);
 
     },
     "/admin/acc/": () => {
         layout_ad();
-        render();
+        render(userAcc);
     },
-    "admin/prd/add": () => {
+    "admin/prds/add": () => {
         layout_ad();
         render(add_News);
 
     },
-    "/admin/news/:id/edit": ({ data }) => {
+    "/admin/prds/:id/edit": ({ data }) => {
         layout_ad();
         const { id } = data;// tạo biến id destructuring từ data 
         render(prd_Detail, id)
