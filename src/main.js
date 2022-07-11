@@ -17,6 +17,7 @@ import by_Prd from "./view/main/detailprd/by_Prd";
 import Form from "./view/header/form";
 import userAcc from "./view/admin/main/user/user";
 import sPage from "./view/main/khong_day/search";
+import blog from "./view/main/blog/blog";
 
 
 const layout_client = () => {
@@ -79,6 +80,7 @@ router.on({
     "/signin": () => { render(Sign_in); layout_client(); },
     "/signup": () => { render(Sign_up); layout_client(); },
     "/buy": () => { render(by_Prd); layout_client(); },
+    "/blog": () => { render(blog); layout_client(); },
 
     "/admin": () => {
         layout_ad();

@@ -40,7 +40,7 @@ const by_Prd = {
                 ${cart.map(prd => /*html*/`
                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                     <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">${prd.title}</td>
-                    <td class=" py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"  id="gia_sp">${prd.price}</td>
+                    <td class=" py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white"  id="gia_sp">${prd.price}.000 VNĐ</td>
                     <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
                         <button data-id="${prd.id}" class="bg-green-500 text-white btn btn-increase mr-2 px-2">Tăng</button>
                         <input class="text-black" type="text" value="${prd.quantity}" class="border border-gray-500 " id="sl_sp"/>

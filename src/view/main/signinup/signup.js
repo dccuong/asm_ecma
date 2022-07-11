@@ -1,25 +1,29 @@
 
-import { getAllUser, signup } from "../../../api/user";
+import { signup } from "../../../api/user";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
 const Sign_up = {
   async print() {
-    return /*html*/`<form id="signup" onchange="" class="mt-8 space-y-6" action="#" method="POST">
+    return /*html*/`
+    <div class="w-[500px] mx-auto mt-[200px]">
+    <form id="signup" onchange="" class="mt-8 space-y-6" action="#" method="POST">
         <input type="hidden" name="remember" value="true">
         <div class="rounded-md shadow-sm -space-y-px">
           <div>
             <label for="email-address" class="sr-only">Email address</label>
-            <input id="email" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+            <input id="email" name="email" type="email" autocomplete="email" class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
           </div>
           <div>
           <label for="user" class="sr-only">name</label>
-          <input id="username" name="user" type="text"  required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="user">
+          <input id="username" name="user" type="text"  class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="user">
         </div>
           <div>
             <label for="password" class="sr-only">Password</label>
-            <input id="pass" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
+            <input id="pass" name="password" type="password" autocomplete="current-password" class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
           </div>
           <div>
           <label for="password" class="sr-only">Retype Password</label>
-          <input id="re_pass" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="RE-Enter Password">
+          <input id="re_pass" name="password" type="password" autocomplete="current-password" class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="RE-Enter Password">
         </div>
         </div>
       
@@ -50,6 +54,7 @@ const Sign_up = {
           </button>
         </div>
       </form>
+      </div>
        `
   }
   ,
@@ -82,4 +87,43 @@ const Sign_up = {
   // }
 
 }
+  // afterRender() {
+  //   const formSignup = $("#signup");
+  //   $("#signup").validate({
+  //     rules: {
+  //       "email":
+  //       {
+  //         "required": true
+  //       },
+  //       "pass":
+  //       {
+  //         "required": true
+  //       },
+  //     },
+  //     messages: {
+  //       "email":
+  //       {
+  //         "required": "true"
+  //       },
+  //       "pass":
+  //       {
+  //         "required": true
+  //       },
+  //     },
+  //     submitHandler: async (form) => {
+  //       try {
+  //         const response = await signup({
+  //           username: document.querySelector("#username").value,
+  //           email: document.querySelector("#email").value,
+  //           password: document.querySelector("#pass").value
+  //         });
+  //         document.location.href = "/signin"
+  //       } catch (error) {
+  //         toastr.error(error.response.data)
+  //       }
+
+  //     }
+  //   });
+  // },
+  ;
 export default Sign_up

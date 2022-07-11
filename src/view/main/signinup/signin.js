@@ -1,7 +1,7 @@
 import { signin } from "../../../api/user";
 import toastr from "toastr";
 import "toastr/build/toastr.min.css";
-import jquery from "jquery";
+import $ from 'jquery';
 import jqueryValidate from "jquery-validation";
 const Sign_in = {
   async print() {
@@ -51,27 +51,35 @@ const Sign_in = {
        </div>`
   },
   afterRender() {
-    const formSignin = document.querySelector("#signin");
-    formSignin.addEventListener("submit", async (e) => {
+    const formSignup = document.querySelector("#signin");
+    formSignup.addEventListener("submit", async (e) => {
       e.preventDefault();
       try {
         // call api
         const { data } = await signin({
           email: document.querySelector("#email").value,
           password: document.querySelector("#pass").value,
-        })
-        console.log(data);
+        });
         localStorage.setItem('user', JSON.stringify(data.user))
         if (data.user.id <= 10) {
           document.location.href = ""
         } else {
           document.location.href = "#"
         }
+
+        form.reset();
       } catch (error) {
         toastr.errors(error.response.data)
       }
-
     });
+    // formSignin.addEventListener("submit", async (e) => {
+    //   e.preventDefault();
+
+    // } catch (error) {
+    //   toastr.errors(error.response.data)
+    // }
+
+    // });
   },
 };
 export default Sign_in

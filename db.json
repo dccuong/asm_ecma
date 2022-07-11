@@ -73,6 +73,12 @@
       "password": "$2a$10$.kZT19P/DVXM2GXScRMZ5OUz0JhVWNZq0IU09HjzUivvLoHyP6t4m",
       "username": "nguyễn đức cường",
       "id": 3
+    },
+    {
+      "email": "admin01@gmail.com",
+      "password": "$2a$10$iOuprCWa7pkHwjrl9ifteO1HQSBcZkliQygkw8ilNRPhDUIU2U8gq",
+      "username": "admin1",
+      "id": 4
     }
   ],
   "categorys": [
